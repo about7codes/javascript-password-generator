@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* 
+Bright Green : #a7ff83
+Mid Green : #17b978
+Dark Green : #086972 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  background: #a7ff83;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #17b978;
+  padding: 1.3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  max-width: 100%;
+}
+
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 0.5rem;
+  column-gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form input,
+label {
+  cursor: pointer;
+}
+
+.title {
+  margin: 0;
+}
+
+.number-imput {
+  width: 2rem;
+}
+
+.password-display {
+  background-color: #086972;
+  width: 100%;
+
+  padding: 1rem;
+  word-break: break-all;
+  border-radius: 2px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 12px;
+  grid-column: span 2;
+  background: #086972;
+  font-family: "Muli", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 90vw;
+  }
+}
